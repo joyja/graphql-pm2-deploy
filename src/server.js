@@ -9,8 +9,8 @@ const app = express()
 
 let httpServer = undefined
 let graphqlServer = undefined
-let listenHost = process.env.EDGENAT_GRAPHQL_HOST || 'localhost'
-let listenPort = process.env.EDGENAT_GRAPHQL_PORT || 4001
+let listenHost = process.env.DEPLOY_HOST || 'localhost'
+let listenPort = process.env.DEPLOY_PORT || 4001
 
 start = async function () {
   const pubsub = new PubSub()
