@@ -1,2 +1,2 @@
-# edge-nat-deploy
-Used to deploy updates to edge-nat
+# GraphQL PM2 Deploy
+Deploys updates to pm2 processes using graphql endpoints.
