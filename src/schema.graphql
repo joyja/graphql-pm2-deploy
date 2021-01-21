@@ -1,0 +1,22 @@
+scalar Datetime
+
+type DeployUpdateStatus {
+  progress: Int
+  lastUpdateAt: Datetime
+  error: String
+}
+
+"""Read only queries"""
+type Query {
+  deployUpdateStatus: DeployUpdateStatus
+}
+
+"""Write requests"""
+type Mutation {
+  deployUpdate: DeployUpdateStatus
+}
+
+"""Web socket updates"""
+type Subscription {
+  deployUpdateStatus: DeployUpdateStatus
+}
